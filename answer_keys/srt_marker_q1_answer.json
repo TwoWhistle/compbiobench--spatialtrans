@@ -1,0 +1,38 @@
+{
+  "question_id": "srt-marker-q1",
+  "expected": {
+    "L1": {
+      "top_marker_gene": "ENSG00000197956",
+      "morans_i": 0.03
+    },
+    "L2": {
+      "top_marker_gene": "ENSG00000162545",
+      "morans_i": 0.191
+    },
+    "L3": {
+      "top_marker_gene": "ENSG00000143013",
+      "morans_i": 0.223
+    },
+    "L4": {
+      "top_marker_gene": "ENSG00000143153",
+      "morans_i": 0.158
+    },
+    "L5": {
+      "top_marker_gene": "ENSG00000117632",
+      "morans_i": 0.159
+    },
+    "L6": {
+      "top_marker_gene": "ENSG00000154027",
+      "morans_i": 0.069
+    },
+    "WM": {
+      "top_marker_gene": "ENSG00000175130",
+      "morans_i": 0.407
+    }
+  },
+  "method_notes": {
+    "marker_selection": "one-vs-rest mean expression difference",
+    "spatial_graph": "6 nearest spatial neighbors using x,y coordinates",
+    "morans_i": "row-neighbor Moran's I with binary kNN weights"
+  }
+}

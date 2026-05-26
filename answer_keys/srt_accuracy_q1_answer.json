@@ -1,0 +1,41 @@
+{
+  "question_id": "srt-accuracy-q1",
+  "expected": {
+    "best_method": "bass_like",
+    "nmi": 0.603,
+    "homogeneity": 0.611,
+    "completeness": 0.595,
+    "method_ranking_by_nmi": [
+      "bass_like",
+      "graphst_like",
+      "bayespace_like",
+      "leiden_like"
+    ]
+  },
+  "all_method_metrics": [
+    {
+      "method": "bass_like",
+      "nmi": 0.603,
+      "homogeneity": 0.611,
+      "completeness": 0.595
+    },
+    {
+      "method": "graphst_like",
+      "nmi": 0.521,
+      "homogeneity": 0.53,
+      "completeness": 0.512
+    },
+    {
+      "method": "bayespace_like",
+      "nmi": 0.428,
+      "homogeneity": 0.436,
+      "completeness": 0.421
+    },
+    {
+      "method": "leiden_like",
+      "nmi": 0.142,
+      "homogeneity": 0.147,
+      "completeness": 0.138
+    }
+  ]
+}
