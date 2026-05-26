@@ -1,0 +1,5 @@
+method,nmi,homogeneity,completeness
+bass_like,0.603,0.611,0.595
+graphst_like,0.521,0.53,0.512
+bayespace_like,0.428,0.436,0.421
+leiden_like,0.142,0.147,0.138

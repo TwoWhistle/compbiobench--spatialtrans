@@ -1,0 +1,177 @@
+{
+  "run_dir": "runs/codex_gpt-5.3-codex_20260525_203439",
+  "numeric_tolerance": 0.01,
+  "results": [
+    {
+      "question_id": "srt-accuracy-q1",
+      "status": "pass",
+      "checks": {
+        "best_method": true,
+        "nmi": true,
+        "homogeneity": true,
+        "completeness": true,
+        "method_ranking_by_nmi": true
+      },
+      "predicted": {
+        "best_method": "bass_like",
+        "nmi": 0.603,
+        "homogeneity": 0.611,
+        "completeness": 0.595,
+        "method_ranking_by_nmi": [
+          "bass_like",
+          "graphst_like",
+          "bayespace_like",
+          "leiden_like"
+        ]
+      },
+      "expected": {
+        "best_method": "bass_like",
+        "nmi": 0.603,
+        "homogeneity": 0.611,
+        "completeness": 0.595,
+        "method_ranking_by_nmi": [
+          "bass_like",
+          "graphst_like",
+          "bayespace_like",
+          "leiden_like"
+        ]
+      }
+    },
+    {
+      "question_id": "srt-marker-q1",
+      "status": "pass_with_tolerance",
+      "checks": {
+        "L1": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        },
+        "L2": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        },
+        "L3": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        },
+        "L4": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        },
+        "L5": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        },
+        "L6": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        },
+        "WM": {
+          "present": true,
+          "marker_gene": true,
+          "morans_i_within_tolerance": true
+        }
+      },
+      "exact_morans_i_match": {
+        "L1": false,
+        "L2": false,
+        "L3": false,
+        "L4": false,
+        "L5": true,
+        "L6": false,
+        "WM": false
+      },
+      "predicted": {
+        "L1": {
+          "top_marker_gene": "ENSG00000197956",
+          "morans_i": 0.033
+        },
+        "L2": {
+          "top_marker_gene": "ENSG00000162545",
+          "morans_i": 0.194
+        },
+        "L3": {
+          "top_marker_gene": "ENSG00000143013",
+          "morans_i": 0.222
+        },
+        "L4": {
+          "top_marker_gene": "ENSG00000143153",
+          "morans_i": 0.154
+        },
+        "L5": {
+          "top_marker_gene": "ENSG00000117632",
+          "morans_i": 0.159
+        },
+        "L6": {
+          "top_marker_gene": "ENSG00000154027",
+          "morans_i": 0.067
+        },
+        "WM": {
+          "top_marker_gene": "ENSG00000175130",
+          "morans_i": 0.405
+        }
+      },
+      "expected": {
+        "L1": {
+          "top_marker_gene": "ENSG00000197956",
+          "morans_i": 0.03
+        },
+        "L2": {
+          "top_marker_gene": "ENSG00000162545",
+          "morans_i": 0.191
+        },
+        "L3": {
+          "top_marker_gene": "ENSG00000143013",
+          "morans_i": 0.223
+        },
+        "L4": {
+          "top_marker_gene": "ENSG00000143153",
+          "morans_i": 0.158
+        },
+        "L5": {
+          "top_marker_gene": "ENSG00000117632",
+          "morans_i": 0.159
+        },
+        "L6": {
+          "top_marker_gene": "ENSG00000154027",
+          "morans_i": 0.069
+        },
+        "WM": {
+          "top_marker_gene": "ENSG00000175130",
+          "morans_i": 0.407
+        }
+      },
+      "tolerance": 0.01
+    },
+    {
+      "question_id": "srt-noncontinuous-q1",
+      "status": "pass",
+      "checks": {
+        "nmi_spatial_smooth_method": true,
+        "nmi_expression_weighted_method": true,
+        "rare_domain_recall_spatial_smooth_method": true,
+        "rare_domain_recall_expression_weighted_method": true,
+        "better_method_for_rare_domain": true
+      },
+      "predicted": {
+        "nmi_spatial_smooth_method": 0.746,
+        "nmi_expression_weighted_method": 0.634,
+        "rare_domain_recall_spatial_smooth_method": 0.0,
+        "rare_domain_recall_expression_weighted_method": 0.812,
+        "better_method_for_rare_domain": "expression_weighted_method"
+      },
+      "expected": {
+        "nmi_spatial_smooth_method": 0.746,
+        "nmi_expression_weighted_method": 0.634,
+        "rare_domain_recall_spatial_smooth_method": 0.0,
+        "rare_domain_recall_expression_weighted_method": 0.812,
+        "better_method_for_rare_domain": "expression_weighted_method"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "question_id": "srt-noncontinuous-q1",
+  "expected": {
+    "nmi_spatial_smooth_method": 0.746,
+    "nmi_expression_weighted_method": 0.634,
+    "rare_domain_recall_spatial_smooth_method": 0.0,
+    "rare_domain_recall_expression_weighted_method": 0.812,
+    "better_method_for_rare_domain": "expression_weighted_method"
+  },
+  "notes": {
+    "data_type": "synthetic rare noncontinuous domain generated using real DLPFC 151673 coordinates",
+    "rare_domain_size": 85,
+    "total_spots": 3611
+  }
+}

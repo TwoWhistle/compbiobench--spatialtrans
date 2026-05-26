@@ -1,0 +1,3 @@
+Method,Global NMI,Rare-domain recall,Better for rare domain?
+spatial_smooth_method,0.746,0.0,No
+expression_weighted_method,0.634,0.812,Yes

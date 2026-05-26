@@ -1,0 +1,4 @@
+Question,Dataset,Task,Main metric/output,Result
+Q1: srt-accuracy-q1,DLPFC 151673,Evaluate predicted spatial domains against cortical-layer annotations,"NMI, homogeneity, completeness, ranking",Pass
+Q2: srt-marker-q1,DLPFC 151673,Identify domain marker genes and compute Moran's I,"Top marker genes, Moran's I",Pass with numeric tolerance
+Q3: srt-noncontinuous-q1,Real DLPFC coordinates + synthetic rare domain,Compare global NMI versus rare-domain recovery,"Global NMI, rare-domain recall",Pass
