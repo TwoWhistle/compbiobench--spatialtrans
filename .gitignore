@@ -4,3 +4,7 @@ __pycache__/
 runs/
 *.log
 .env
+.DS_Store
+__pycache__/
+*.pyc
+*.log
